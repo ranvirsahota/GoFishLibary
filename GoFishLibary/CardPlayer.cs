@@ -32,7 +32,7 @@ namespace GoFishLibary
             }
             else
             {
-                GoFishOrHandCards();
+                GoFishOrHandCards(); 
             }
         }
 
@@ -73,7 +73,7 @@ namespace GoFishLibary
             Globals.CARD_PLAYERS_FROM_TO_TRANSACTION[0] = Name;
             Globals.CARD_PLAYERS_FROM_TO_TRANSACTION[1] = fishFrom;
             Globals.CARD_TRANSACTION.Add(_cardSeeking, 0);
-            Console.WriteLine(Name + " fish for: " + _cardSeeking + " from " + fishFrom);
+            //Console.WriteLine(Name + " fish for: " + _cardSeeking + " from " + fishFrom);
         }
 
         private void _handCards()
@@ -81,14 +81,14 @@ namespace GoFishLibary
             if (_cards.ContainsKey(_cardSeeking))
             {
                 Globals.CARD_TRANSACTION[_cardSeeking] = _cards[_cardSeeking];
-                Console.WriteLine(Name + " got: " + _cardSeeking + " " + _cards[_cardSeeking]);
+                //Console.WriteLine(Name + " got: " + _cardSeeking + " " + _cards[_cardSeeking]);
                 _removeCard(_cardSeeking);
             }
         }
         private void _goFish()
         {
             Globals.CARD_TRANSACTION[_cardSeeking] = 0;
-            Console.WriteLine("Go Fish " + Globals.CARD_PLAYERS_FROM_TO_TRANSACTION[0]);
+            //Console.WriteLine("Go Fish " + Globals.CARD_PLAYERS_FROM_TO_TRANSACTION[0]);
         }
         //Looks for cards of four that are the same                                  
         private void _findBook(string cardToBook = null)
@@ -97,7 +97,7 @@ namespace GoFishLibary
             {
                 _removeCard(cardToBook);
                 Books.Add(cardToBook);
-                Console.WriteLine(Name + " book: " + cardToBook);
+                //Console.WriteLine(Name + " book: " + cardToBook);
             }
         }
     }

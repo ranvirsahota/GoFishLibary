@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GoFishLibary
 {
-    internal class AI : CardPlayer
+    public class AI : CardPlayer
     {
         public AI(string name) : base(name) { }
 
@@ -14,12 +14,10 @@ namespace GoFishLibary
         {
             if (isMyTurn)
             {
-                Console.WriteLine(Name + " turn");
                 int i = new Random().Next(0, Globals.CardPlayerNames.Count - 1);
                 if (Name == Globals.CardPlayerNames[i])
                 {
-                    if (i == 0) { i++; }
-                    else if (i == Globals.CardPlayerNames.Count - 1) { i--; }
+                    if (i == Globals.CardPlayerNames.Count - 1) { i--; }
                     else { i++; }
                 }
                 fishFrom = Globals.CardPlayerNames[i];

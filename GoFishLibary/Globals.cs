@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GoFishLibary
 {
-    internal static class Globals
+    public static class Globals
     {
         public static Dictionary<string, List<string>> PUBLICLY_KNOWN_CARDS = new Dictionary<string, List<string>>();
         public static string[] CARD_PLAYERS_FROM_TO_TRANSACTION = new string[2];
