@@ -4,6 +4,11 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Company>RanvirSahota</Company>
+    <Authors>RanvirSahota</Authors>
+    <RepositoryUrl>https://github.com/ranvirsahota/GoFishLibary</RepositoryUrl>
+    <Description>Package is designed to be the pure basic logic that is required for the card game GoFish</Description>
   </PropertyGroup>
 
 </Project>
