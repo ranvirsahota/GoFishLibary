@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -9,6 +9,7 @@
     <Authors>RanvirSahota</Authors>
     <RepositoryUrl>https://github.com/ranvirsahota/GoFishLibary</RepositoryUrl>
     <Description>Package is designed to be the pure basic logic that is required for the card game GoFish</Description>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
